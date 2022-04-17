@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify music  </title>
+    <link  rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Qahiri&family=Roboto:ital,wght@0,100;0,300;0,400;1,100&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css">
+</head>
+<body>
+    <nav>
+        <div class="logocontainer">
+            <img src="logo.png" alt="">
+            <p>Spotify</p>
+            <i class="fas fa-bars" id="bars"></i>
+        </div>
+        <div class="manucontainer">
+            <ul>
+                <li>Home</li>
+                <li>About</li>
+                <li>Songs</li>
+            </ul>
+        </div>
+        <div class="searchcontainer">
+            <div class="search-input-i">
+            <input type="text" class="searchsongs">
+            <i class="fas fa-search"></i>
+            
+        </div>
+        </div>
+        <div class="userlogo">
+            <div class="imgcontainer">
+                <img src="username.jpg" alt="">
+                
+            </div>
+            <div class="usernamecontainer">
+                <p>vikas</p><i class="fas fa-caret-down"></i>
+            </div>
+
+        </div>
+        
+    </nav>
+    <div class="container">
+        <div class="songscontainer">
+            <p class="paragraph">Best Quality Songs</p>
+            <div class="songslist">
+                <div class="song">
+                    <div class="song-img-name">
+                    <img src="covers/1.jpg" alt="" class="song-img">
+                    <span class="songname">Let me love you</span>
+                </div>
+                    <div class="song-duration-play-pause">
+                    <span class="time-duration">05:00</span>
+                    <span class="play-pause-icon"><i class="far fa-play-circle" id="0" ></i></span></div>
+                </div>
+                <div class="song">
+                    <div class="song-img-name">
+                    <img src="covers/1.jpg" alt="" class="song-img">
+                    <span class="songname">Let me love you</span>
+                </div>
+                    <div class="song-duration-play-pause">
+                    <span class="time-duration">05:00</span>
+                    <span class="play-pause-icon"><i class="far fa-play-circle" id="1"></i></span></div>
+                </div>
+                <div class="song">
+                    <div class="song-img-name">
+                    <img src="covers/1.jpg" alt="" class="song-img">
+                    <span class="songname">Let me love you</span>
+                </div>
+                    <div class="song-duration-play-pause">
+                    <span class="time-duration">05:00</span>
+                    <span class="play-pause-icon"><i class="far fa-play-circle" id="2"></i></span></div>
+                </div>
+                <div class="song">
+                    <div class="song-img-name">
+                    <img src="covers/1.jpg" alt="" class="song-img">
+                    <span class="songname">Let me love you</span>
+                </div>
+                    <div class="song-duration-play-pause">
+                    <span class="time-duration">05:00</span>
+                    <span class="play-pause-icon"><i class="far fa-play-circle" id="3"></i></span></div>
+                </div>
+                <div class="song">
+                    <div class="song-img-name">
+                    <img src="covers/1.jpg" alt="" class="song-img">
+                    <span class="songname">Let me love you</span>
+                </div>
+                    <div class="song-duration-play-pause">
+                    <span class="time-duration">05:00</span>
+                    <span class="play-pause-icon"><i class="far fa-play-circle" id="4"></i></span></div>
+                </div>
+                <div class="song">
+                    <div class="song-img-name">
+                    <img src="covers/1.jpg" alt="" class="song-img">
+                    <span class="songname">Let me love you</span>
+                </div>
+                    <div class="song-duration-play-pause">
+                    <span class="time-duration">05:00</span>
+                    <span class="play-pause-icon"><i class="far fa-play-circle" id="5"></i></span></div>
+                </div>
+                <div class="song">
+                    <div class="song-img-name">
+                    <img src="covers/1.jpg" alt="" class="song-img">
+                    <span class="songname">Let me love you</span>
+                </div>
+                    <div class="song-duration-play-pause">
+                    <span class="time-duration">05:00</span>
+                    <span class="play-pause-icon"><i class="far fa-play-circle" id="6"></i></span></div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <div class="bottom">
+        <div class="inputcontainer">
+            <input type="range" class="progressbar" value="0">
+            <div class="icon-sitting-gif">
+                <div class="gif-songname">
+                    <img src="playing.gif" alt="" class="gif">
+                    <span class="song-name"> <marquee behavior="" direction=""> let love you </marquee></span>
+                    <i class="fas fa-volume-up" id="volume-tv"></i>
+                    <input type="range" class="volume">
+                </div>
+
+            <div class="icon">
+            <i class="fas fa-step-backward" id="previous"></i>
+            <i class="far fa-play-circle"id="play-pause-button"></i>
+            <i class="fas fa-step-forward" id="next"></i>
+</div>
+<div class="setting">    
+<i class="fas fa-cog" id='setting'></i>
+</div>
+            </div>
+        </div>
+    </div>
+    <div class="settingoption">
+        <ul class="settingcontainer">
+            <li class="speed">Speed</li>
+            <li class="loop">Loop</li>
+        </ul>
+        <ul class='speedcontainer'>
+           <li value="1">0.25X</li>
+           <li value="2">0.5X</li>
+           <li value="3">0.75X</li>
+           <li value="4">Normal</li>
+           <li value="5">1.25X</li>
+           <li value="6">1.5X</li>
+           <li value="7">1.75X</li>
+           <li value="8">2x</li>
+           
+        </ul>
+    </div>
+    <div class="volumecontainer">
+        <i class="fas fa-volume-up" id="volume-tv"></i>
+        <input type="range" class="volume">
+
+    </div>
+    <div class="profilepicturecontainer">
+        <div class="profilecontainerimgcontainer">
+        <img src="username.jpg" alt="">
+        </div>
+        <div class="searchfilecontainer">
+            <input type="file" class="button" accept="image/jpg" />
+
+    </div>
+    </div>
+    <div class="hollywoodsongs">
+        <h2>Best Tolly wood songs</h2>
+        <div class="songlist">
+        <div class="songcontainer">
+            
+            <div class="songitem">
+                <img src="covers/1.jpg" class="img" alt="">
+               <div class="desc">
+                    <h4>Yariya</h4>
+                    <p>this song is from the yaariya movie</p>
+               </div>
+            </div>
+            <div class="songitem">
+                <img src="covers/1.jpg" class="img" alt="">
+               <div class="desc">
+                    <h4>Yariya</h4>
+                    <p>this song is from the yaariya movie</p>
+               </div>
+            </div>
+            <div class="songitem">
+                <img src="covers/1.jpg" class="img" alt="">
+               <div class="desc">
+                    <h4>Yariya</h4>
+                    <p>this song is from the yaariya movie</p>
+               </div>
+            </div>
+            <div class="songitem">
+                <img src="covers/1.jpg" class="img" alt="">
+               <div class="desc">
+                    <h4>Yariya</h4>
+                    <p>this song is from the yaariya movie</p>
+               </div>
+            </div>
+            <div class="songitem">
+                <img src="covers/1.jpg" class="img" alt="">
+               <div class="desc">
+                    <h4>Yariya</h4>
+                    <p>this song is from the yaariya movie</p>
+               </div>
+            </div>
+            <div class="songitem">
+                <img src="covers/1.jpg" class="img" alt="">
+               <div class="desc">
+                    <h4>Yariya</h4>
+                    <p>this song is from the yaariya movie</p>
+               </div>
+            </div>
+            <div class="songitem">
+                <img src="covers/1.jpg" class="img" alt="">
+               <div class="desc">
+                    <h4>Yariya</h4>
+                    <p>this song is from the yaariya movie</p>
+               </div>
+            </div>
+            </div>
+          
+ 
+     
+    
+           
+    
+          
+ 
+        </div>
+
+    </div>
+    <div class="hollywoodsongs">
+        <h2>Best Bolly wood songs</h2>
+        <div class="songlist">
+        <div class="songcontainer">
+            
+            <div class="songitem">
+                <img src="covers/1.jpg" class="img" alt="">
+               <div class="desc">
+                    <h4>Yariya</h4>
+                    <p>this song is from the yaariya movie</p>
+               </div>
+            </div>
+            <div class="songitem">
+                <img src="covers/1.jpg" class="img" alt="">
+               <div class="desc">
+                    <h4>Yariya</h4>
+                    <p>this song is from the yaariya movie</p>
+               </div>
+            </div>
+            <div class="songitem">
+                <img src="covers/1.jpg" class="img" alt="">
+               <div class="desc">
+                    <h4>Yariya</h4>
+                    <p>this song is from the yaariya movie</p>
+               </div>
+            </div>
+            <div class="songitem">
+                <img src="covers/1.jpg" class="img" alt="">
+               <div class="desc">
+                    <h4>Yariya</h4>
+                    <p>this song is from the yaariya movie</p>
+               </div>
+            </div>
+            <div class="songitem">
+                <img src="covers/1.jpg" class="img" alt="">
+               <div class="desc">
+                    <h4>Yariya</h4>
+                    <p>this song is from the yaariya movie</p>
+               </div>
+            </div>
+            <div class="songitem">
+                <img src="covers/1.jpg" class="img" alt="">
+               <div class="desc">
+                    <h4>Yariya</h4>
+                    <p>this song is from the yaariya movie</p>
+               </div>
+            </div>
+            <div class="songitem">
+                <img src="covers/1.jpg" class="img" alt="">
+               <div class="desc">
+                    <h4>Yariya</h4>
+                    <p>this song is from the yaariya movie</p>
+               </div>
+            </div>
+            </div>
+          
+ 
+     
+    
+           
+    
+          
+ 
+        </div>
+
+    </div>
+    <div class="hollywoodsongs">
+        <h1>Best holly wood songs</h1>
+        <div class="songlist">
+        <div class="songcontainer">
+            
+            <div class="songitem">
+                <img src="covers/1.jpg" class="img" alt="">
+               <div class="desc">
+                    <h4>Yariya</h4>
+                    <p>this song is from the yaariya movie</p>
+               </div>
+            </div>
+            <div class="songitem">
+                <img src="covers/1.jpg" class="img" alt="">
+               <div class="desc">
+                    <h4>Yariya</h4>
+                    <p>this song is from the yaariya movie</p>
+               </div>
+            </div>
+            <div class="songitem">
+                <img src="covers/1.jpg" class="img" alt="">
+               <div class="desc">
+                    <h4>Yariya</h4>
+                    <p>this song is from the yaariya movie</p>
+               </div>
+            </div>
+            <div class="songitem">
+                <img src="covers/1.jpg" class="img" alt="">
+               <div class="desc">
+                    <h4>Yariya</h4>
+                    <p>this song is from the yaariya movie</p>
+               </div>
+            </div>
+            <div class="songitem">
+                <img src="covers/1.jpg" class="img" alt="">
+               <div class="desc">
+                    <h4>Yariya</h4>
+                    <p>this song is from the yaariya movie</p>
+               </div>
+            </div>
+            <div class="songitem">
+                <img src="covers/1.jpg" class="img" alt="">
+               <div class="desc">
+                    <h4>Yariya</h4>
+                    <p>this song is from the yaariya movie</p>
+               </div>
+            </div>
+            <div class="songitem">
+                <img src="covers/1.jpg" class="img" alt="">
+               <div class="desc">
+                    <h4>Yariya</h4>
+                    <p>this song is from the yaariya movie</p>
+               </div>
+            </div>
+            </div>
+          
+ 
+     
+    
+           
+    
+          
+ 
+        </div>
+
+    </div>
+    <div class="footer">
+
+        <div class=" footerlogo">
+            <img src="logo.png" alt="">
+            <p>Spotify</p>
+
+        </div>
+        <div class="footercontent">
+            <div class="companycontent">
+            <ul class="contentofcompany">
+                <li>Company</li>
+                <li>About</li>
+                <li>Jobs</li>
+                <li>For the record</li>
+                </ul></div>
+                <div class="companycontent">
+                <ul class="contentofcompany">
+                    <li>Comunities</li>
+                    <li>For Artists</li>
+                    <li>Devloper</li>
+                    <li>Advertising</li>
+                    <li>Investor</li>
+                    <li>Vendor</li>
+                    </ul>
+                    </div>
+                    <div class="companycontent">
+                    <ul class="contentofcompany">
+                        <li>UseFull Link</li>
+                        <li>Support</li>
+                        <li>Web player</li>
+                        <li>Free mobile app</li>
+                        </ul>
+                        </div>
+
+
+        </div>
+        <div class="socialmedia-icon">
+            <p><i class="fab fa-instagram"></i></p>
+          <p><i class="fab fa-facebook-f"></i></p>
+           <p><i class="fab fa-twitter"></i></p>
+
+        </div>
+    </div>
+    
+    <script src="script2.js"></script>
+</body>
+</html>
